@@ -2,7 +2,7 @@
 
 .logo { grid-area: logo; }
 .empty { grid-area: empty;}
-.socmed1 { grid-area: sc1;}
+.socmed1 { grid-area: sm1;}
 .favcart { grid-area: favcart;}    
 .page1 { grid-area: aboutus; }
 .page2 { grid-area: news; }
@@ -13,33 +13,98 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-        'logo empty empty empty sc1 favcart'
+        'logo empty empty empty sm1 favcart'
         'logo aboutus news artworks contactus signin';
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1px;
-    background-color: #2196F3;
+    background-color: whitesmoke;
     padding: 5px;
 }
 
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: whitesmoke;
     text-align: center;
     padding: 5px 0;
     font-size: 15px;
 }
 
-/* --- */
+/* other grids */
 
 .socmed1 > ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    list-style-type: none;
-    text-align: left;
+  list-style-type: none;
+  text-align: left;
 }
 
 .favcart > ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-    list-style-type: none;
-    text-align: left;
+  list-style-type: none;
+  text-align: left;
+}
+
+/* img social media 
+TODO FIX DUPLICATED CODE
+TODO fix pinterest logo*/
+
+.etsy {
+  background: url("./images/etsy.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.etsy:hover {
+  background: url("./images/etsyh.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pint {
+  background: url("./images/pinterest.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pint:hover {
+  background: url("./images/pinteresth.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.fb {
+  background: url("./images/facebook.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fb:hover {
+  background: url("./images/facebookh.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insta {
+  background: url("./images/instagram.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insta:hover {
+  background: url("./images/instagramh.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tikt {
+  background: url("./images/tiktok.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tikt:hover {
+  background: url("./images/tiktokh.gif") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
