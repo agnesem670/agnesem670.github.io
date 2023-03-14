@@ -1,0 +1,45 @@
+/* grid in header */
+
+.logo { grid-area: logo; }
+.empty { grid-area: empty;}
+.socmed1 { grid-area: sc1;}
+.favcart { grid-area: favcart;}    
+.page1 { grid-area: aboutus; }
+.page2 { grid-area: news; }
+.page3 { grid-area: artworks; }
+.page4 { grid-area: contactus; }
+.page5 { grid-area: signin; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'logo empty empty empty sc1 favcart'
+        'logo aboutus news artworks contactus signin';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    background-color: #2196F3;
+    padding: 5px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+/* --- */
+
+.socmed1 > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    text-align: left;
+}
+
+.favcart > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    text-align: left;
+}
