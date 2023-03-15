@@ -1,4 +1,4 @@
-/* grid in header */
+/* grid in header - layout */
 
 .logo { grid-area: logo; }
 .empty { grid-area: empty;}
@@ -9,6 +9,8 @@
 .page3 { grid-area: artworks; }
 .page4 { grid-area: contactus; }
 .page5 { grid-area: signin; }
+
+/* TODO layouts for different screen widths */ 
 
 .grid-container {
     display: grid;
@@ -22,89 +24,47 @@
 }
 
 .grid-container > div {
-    background-color: whitesmoke;
     text-align: center;
     padding: 5px 0;
     font-size: 15px;
 }
 
-/* other grids */
+/* grids nested in header-grid - layout; 
+  grids contains small icons (social media, favorite, cart) */
 
 .socmed1 > ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
-  text-align: left;
 }
 
 .favcart > ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
-  text-align: left;
 }
 
-/* img social media 
-TODO FIX DUPLICATED CODE
-TODO fix pinterest logo*/
+/* .gif-s with icons and hovers displeyed as a background
+TODO fix pinterest and tiktok logo*/
 
-.etsy {
-  background: url("./images/etsy.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
+.etsy { background: url("./images/etsy.gif") no-repeat;}
+.etsy:hover {background: url("./images/etsyh.gif") no-repeat;}
 
-.etsy:hover {
-  background: url("./images/etsyh.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.pint {
-  background: url("./images/pinterest.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.pint:hover {
-  background: url("./images/pinteresth.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
+.pint { background: url("./images/pinterest.gif") no-repeat;}
+.pint:hover { background: url("./images/pinteresth.gif") no-repeat;}
 
 
-.fb {
-  background: url("./images/facebook.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
+.fb { background: url("./images/facebook.gif") no-repeat;}
+.fb:hover { background: url("./images/facebookh.gif") no-repeat;}
 
-.fb:hover {
-  background: url("./images/facebookh.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
+.insta { background: url("./images/instagram.gif") no-repeat;}
+.insta:hover { background: url("./images/instagramh.gif") no-repeat;}
 
-.insta {
-  background: url("./images/instagram.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
+.tikt { background: url("./images/tiktok.gif") no-repeat;}
+.tikt:hover { background: url("./images/tiktokh.gif") no-repeat;}
 
-.insta:hover {
-  background: url("./images/instagramh.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
+.fav { background: url("./images/heart.gif") no-repeat;}
+.fav:hover { background: url("./images/hearth.gif") no-repeat;}
 
-.tikt {
-  background: url("./images/tiktok.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tikt:hover {
-  background: url("./images/tiktokh.gif") no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
+.cart { background: url("./images/cart.gif") no-repeat;}
+.cart:hover { background: url("./images/carth.gif") no-repeat;}
