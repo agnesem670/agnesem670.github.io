@@ -1,12 +1,13 @@
+/* --- HEADER --- */
 /* grid in header - layout */
 
 .logo { grid-area: logo; }
 .empty { grid-area: empty;}
 .socmed1 { grid-area: sm1;}
 .favcart { grid-area: favcart;}    
-.page1 { grid-area: aboutus; }
-.page2 { grid-area: news; }
-.page3 { grid-area: artworks; }
+.page1 { grid-area: news; }
+.page2 { grid-area: artworks; }
+.page3 { grid-area: aboutus; }
 .page4 { grid-area: contactus; }
 .page5 { grid-area: signin; }
 
@@ -16,17 +17,24 @@
     display: grid;
     grid-template-areas:
         'logo empty empty empty sm1 favcart'
-        'logo aboutus news artworks contactus signin';
+        'logo news artworks aboutus contactus signin';
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1px;
-    background-color: whitesmoke;
-    padding: 5px;
+    background-color: white;
+    padding: 2px;
 }
 
 .grid-container > div {
+    
     text-align: center;
-    padding: 5px 0;
+    padding: 2px;
     font-size: 15px;
+    background-color: white;
+}
+
+.grid-container > .logo { 
+  background-color: white;
+  grid-row: span 2;
 }
 
 /* grids nested in header-grid - layout; 
@@ -45,7 +53,8 @@
 }
 
 /* .gif-s with icons and hovers displeyed as a background
-TODO fix pinterest and tiktok logo*/
+TODO fix icons: pinterest, tiktok, heart and cart (small jump beetwen icon and hover)
+TODO fix icons dimensions to 20x20px*/
 
 .etsy { background: url("./images/etsy.gif") no-repeat;}
 .etsy:hover {background: url("./images/etsyh.gif") no-repeat;}
@@ -68,3 +77,7 @@ TODO fix pinterest and tiktok logo*/
 
 .cart { background: url("./images/cart.gif") no-repeat;}
 .cart:hover { background: url("./images/carth.gif") no-repeat;}
+
+
+
+/* --- BODY --- */
