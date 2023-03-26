@@ -1,15 +1,25 @@
 /* --- HEADER --- */
 /* grid in header - layout */
 
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+a {
+  text-decoration: none;
+  color:black;
+  font-size: 30 px;
+}
+
 .logo { grid-area: logo; }
 .empty { grid-area: empty;}
 .socmed1 { grid-area: sm1;}
 .favcart { grid-area: favcart;}    
-.page1 { grid-area: news; }
+.page1 { grid-area: events; }
 .page2 { grid-area: artworks; }
-.page3 { grid-area: aboutus; }
+.page3 { grid-area: ourstory; }
 .page4 { grid-area: contactus; }
-.page5 { grid-area: signin; }
+.page5 { grid-area: joinin; }
 
 /* TODO layouts for different screen widths */ 
 
@@ -17,9 +27,11 @@
     display: grid;
     grid-template-areas:
         'logo empty empty empty sm1 favcart'
-        'logo news artworks aboutus contactus signin';
+        'logo events artworks ourstory contactus joinin';
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1px;
+    align-items: center;
+    justify-items: center;
     background-color: white;
     padding: 2px;
 }
@@ -52,9 +64,7 @@
   list-style-type: none;
 }
 
-/* .gif-s with icons and hovers displeyed as a background
-TODO fix icons: pinterest, tiktok, heart and cart (small jump beetwen icon and hover)
-TODO fix icons dimensions to 20x20px*/
+/* .gif-s with icons and hovers displeyed as a background */
 
 .etsy { background: url("./images/etsy.gif") no-repeat;}
 .etsy:hover {background: url("./images/etsyh.gif") no-repeat;}
@@ -82,10 +92,25 @@ TODO fix icons dimensions to 20x20px*/
 
 /* --- BODY --- */
 
-
-.hero {
+.heroimg {
   display: flex;
   justify-content: center;
   padding: 10px;
   background-color: white;
+}
+
+/* grid in body */
+.grid-with-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+  background-color: green;
+}
+
+.grid-with-story > a {
+  padding: 5px;
+  background-color: blue;
 }
