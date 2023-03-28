@@ -1,64 +1,99 @@
 
-<!--- Created three layouts for three screen widths: up to 700, 700-1200, 1200 and more -->
+<!-- TODO two layouts for two screen widths: up to 700, 700 and more -->
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>A. Geller Art</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="art, gallery, artworks, drawings, artist">
+        <meta name="description" content="A.Geller - art gallery">
+        <meta name="author" content="A.Geller LTD">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="styles.css">
     </head>
     <header>
-        <div class="grid-container">
+        <div class="container-head"></div>
+            <div class="headimg"><img src="./images/headcol1500.gif"></div>
+            <ul class="nav">
+                <il><a href="./events.html"><b>EVENTS</b></a></nav>
+                <il><a href="./artworks.html"><b>ARTWORKS</b></a></nav>
+                <il><a href="./mystory.html"><b>MY STORY</b></a></nav>
+                <il><a href="./contact.html"><b>CONTACT</b></a></nav>
+                <il><a href="./join.html"><b>JOIN MY STORY</b></a></nav>
+            </ul>          
+    </header>
 
-            <a class="logo" href="./index.html"><img src="./images/logo100.gif" alt="Logo"></a>
+    <body>
 
-            <!-- grids nested in header-grid with small icons (social media, favorite ad cart); --- 
-            icons are displayed as a three different .gif-s for every specyfic icon-type; 
-            code below displeys only icon-frame with empty background, same for every icon; 
-            specyfic icons and hovers are displeyed as a background option defined in styles -->
+        <div class="heroimg"><img src="./images/landcol1500.gif"></div>
 
-            <div class="socmed1">
-                <ul>
+        <span></span>
+
+        <div class="enjoy">Stories captured in the drawings</div>
+
+        <span></span>
+
+        <div class="grid-with-story">
+            <div><img src="./images/a-geller-art-1-1.gif"></div>
+            <a href="artworks.html"><img class="body1" src="./images/bodytxt1.gif"></a>
+            <div><img src="./images/a-geller-art-1-2.gif"></div>
+            <div><img src="./images/a-geller-art-1-3.gif"></div>
+        </div>
+
+        <span></span>
+
+        <div class="grid-with-story">
+            <a href="artworks.html"><img class="body2" src="./images/bodytxt2.gif"></a>
+            <div><img src="./images/a-geller-art-2-1.gif"></div>
+            <div><img src="./images/a-geller-art-2-2.gif"></div>
+            <div><img src="./images/a-geller-art-2-3.gif"></div>
+        </div>
+
+        <span></span>
+
+        <div class="grid-with-story">
+            <div><img src="./images/a-geller-art-3-1.gif"></div>
+            <div><img src="./images/a-geller-art-3-2.gif"></div>
+            <a href="artworks.html"><img class="body3" src="./images/bodytxt3.gif"></a>
+            <div><img src="./images/a-geller-art-3-3.gif"></div>
+        </div>
+
+        <span></span>
+
+    </body>
+
+        <span></span>
+
+    <footer>
+        <div class="container-foot">
+
+            <div>
+                <h3>About Us</h3>
+                <a class="link" href="mystory.html">About company</a>
+                <a class="link" href="contact.html">Contact Us</a>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+                <ul class="socmed">
                     <a href="https://www.etsy.com/pl/people/xa6r7tj4jy2m451d" target="_blank"><img class="etsy" src="./images/frame.gif" alt="Et"></a>
                     <a href="https://pl.pinterest.com/agellerart/" target="_blank"><img class="pint" src="./images/frame.gif" alt="Pt"></a>
                     <a href="https://www.facebook.com/profile.php?id=100086386541551" target="_blank"><img class="fb" src="./images/frame.gif" alt="Fb"></a>
                     <a href="https://www.instagram.com/a.gellerart/" target="_blank"><img class="insta" src="./images/frame.gif" alt="Ins"></a>
                     <a href="https://www.tiktok.com/@a.gellerart" target="_blank"><img class="tikt" src="./images/frame.gif" alt="TT"></a>
                 </ul>
+                <p>© A.Geller Art - all rights reserved</p>
+
+
             </div>
 
-            <div class="favcart">
-                <ul>
-                    <a href="./favorite.html"><img class="fav" src="./images/frame.gif" alt="fav"></a>
-                    <a href="./shoppingcart.html"><img class="cart" src="./images/frame.gif" alt="cart"></a>
-                </ul>
-            </div>
-
-            <div class="page1" ><a href="./events.html"><b>EVENTS</b></a></div>
-            <div class="page2" ><a href="./artworks.html"><b>ARTWORKS</b></a></div>
-            <div class="page3" ><a href="./ourstory.html"><b>OUR STORY</b></a></div>
-            <div class="page4" ><a href="./contactus.html"><b>CONTACT US</b></a></div>
-            <div class="page5" ><a href="./signin.html"><b>JOIN IN</b></a></div>
-                        
-        </div>
-    </header>
-
-    <body>
-
-        <div class="heroimg"><img src="./images/landingwide1500.gif" alt="fav"></div>
-
-        <h1>Story</h1>
-
-        <div class="grid-with-story">
-            <a href="./artworks.html"><img class="art1" src="./images/art1.gif" alt="Drawing"></a>
-            <p> txt</p>
-            <a href="./artworks.html"><img class="art1" src="./images/art1.gif" alt="Drawing"></a>
-            <a href="./artworks.html"><img class="art1" src="./images/art1.gif" alt="Drawing"></a>
         </div>
 
-    </body>
-
-    <footer>
-
+</div>
     </footer>

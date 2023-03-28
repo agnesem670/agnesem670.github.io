@@ -11,67 +11,121 @@ a {
   font-size: 30 px;
 }
 
-.logo { grid-area: logo; }
-.empty { grid-area: empty;}
-.socmed1 { grid-area: sm1;}
-.favcart { grid-area: favcart;}    
-.page1 { grid-area: events; }
-.page2 { grid-area: artworks; }
-.page3 { grid-area: ourstory; }
-.page4 { grid-area: contactus; }
-.page5 { grid-area: joinin; }
-
 /* TODO layouts for different screen widths */ 
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'logo empty empty empty sm1 favcart'
-        'logo events artworks ourstory contactus joinin';
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 1px;
-    align-items: center;
-    justify-items: center;
-    background-color: white;
-    padding: 2px;
+.container-head {
+  position: relative;
 }
 
-.grid-container > div {
-
-    text-align: left;
-    padding: 2px;
-    font-size: 15px;
-    background-color: white;
-}
-
-.grid-container > .logo { 
-  background-color: white;
+.headimg {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   grid-row: span 2;
 }
 
-/* grids nested in header-grid - layout; 
-  grids contains small icons (social media, favorite, cart) */
-
-.socmed1 > ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  list-style-type: none;
+.nav {
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  padding-bottom: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.favcart > ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  list-style-type: none;
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-/* .gif-s with icons and hovers displeyed as a background */
+.nav a:hover {
+  color: rgb(86, 1, 86);
+}
+
+/* --- BODY --- */
+span {
+  padding: 10px;
+}
+
+.enjoy {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(86, 1, 86);
+}
+
+.heroimg {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-with-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: auto;
+  margin-inline: auto;
+  max-width: 1500px;
+  background-image: url(./images/bodyco.gif);
+  justify-items: center;
+}
+
+
+.grid-with-story:hover {
+  background:url(./images/bodycol.gif), no-repeat;
+}
+
+.body1:hover {
+  background:url(./images/bodytxt1h.gif), no-repeat;
+}
+
+.body2:hover {
+  background:url(./images/bodytxt2h.gif), no-repeat;
+}
+
+.body3:hover {
+  background:url(./images/bodytxt3h.gif), no-repeat;
+}
+
+
+
+/* --- FOOTER --- */
+.container-foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: auto;
+  margin-inline: auto;
+  background-image: url(./images/footcol1500.gif);
+  justify-items: left;
+  max-width: 1500px;
+}
+
+.container-foot h3, p {
+  margin-left: 20px;
+  font-size: large;
+}
+
+.link {
+  display: block;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: large;
+}
+
+.link:hover {
+  color: rgb(86, 1, 86);
+  font-weight: bold;
+}
 
 .etsy { background: url("./images/etsy.gif") no-repeat;}
 .etsy:hover {background: url("./images/etsyh.gif") no-repeat;}
 
 .pint { background: url("./images/pinterest.gif") no-repeat;}
 .pint:hover { background: url("./images/pinteresth.gif") no-repeat;}
-
 
 .fb { background: url("./images/facebook.gif") no-repeat;}
 .fb:hover { background: url("./images/facebookh.gif") no-repeat;}
@@ -81,36 +135,3 @@ a {
 
 .tikt { background: url("./images/tiktok.gif") no-repeat;}
 .tikt:hover { background: url("./images/tiktokh.gif") no-repeat;}
-
-.fav { background: url("./images/heart.gif") no-repeat;}
-.fav:hover { background: url("./images/hearth.gif") no-repeat;}
-
-.cart { background: url("./images/cart.gif") no-repeat;}
-.cart:hover { background: url("./images/carth.gif") no-repeat;}
-
-
-
-/* --- BODY --- */
-
-.heroimg {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  background-color: white;
-}
-
-/* grid in body */
-.grid-with-story {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  align-items: center;
-  justify-items: center;
-  background-color: white;
-  background-color: green;
-}
-
-.grid-with-story > a {
-  padding: 5px;
-  background-color: blue;
-}
