@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>A. Geller Art</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="art, gallery, artworks, drawings, artist">
+        <meta name="description" content="A.Geller - art gallery">
+        <meta name="author" content="A.Geller LTD">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-mystory.css">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const buttons = document.getElementsByTagName("button"); 
+                for (let button of buttons) {
+                    document.addEventListener("click", show);
+                }
+            })
+        
+            const show = (e) => {
+                document.getElementById(e.target.id).getElementsByTagName('img')[0].className = "open";
+            }
+        </script>
+    </head>
+    <header>
+        <div class="container-head"></div>
+            <div class="headimg"><img src="./images/headcol1500.gif"></div>
+            <ul class="nav">
+                <il><a href="./events.html"><b>EVENTS</b></a></nav>
+                <il><a href="./artworks.html"><b>ARTWORKS</b></a></nav>
+                <il><a href="./mystory.html"><b>MY STORY</b></a></nav>
+                <il><a href="./contact.html"><b>CONTACT</b></a></nav>
+                <il><a href="./join.html"><b>JOIN MY STORY</b></a></nav>
+            </ul>          
+    </header>
+
+    <body>
+        <div class = "grid-with-doors"> 
+            <div></div>
+            <div></div>
+            <div><img src="./images/doors4.gif"></div>
+            <div><img src="./images/doors8.gif"></div>
+            <div><img src="./images/doors6.gif"></div>
+            <div><img src="./images/doors3.gif"></div>
+            <div><img src="./images/doors9.gif"></div>
+            <div><img src="./images/doors2.gif"></div>
+            <button id="david"><img class="close" src="./images/doors1open.gif"></button>
+            <button id="twinp"><img class="close" src="./images/doors1open.gif"></button>
+        </div>
+
+    </body>
+
+        <footer>
+        <div class="container-foot">
+
+            <div>
+                <h3>About</h3>
+                <a class="link" href="mystory.html">The Company</a>
+                <a class="link" href="mystory.html">Legal Information</a>
+                <a class="link" href="mystory.html">Help</a>
+                <a class="link" href="contact.html">Contact</a>
+                <span></span>
+            </div>
+
+            <div>
+                <h3>Art</h3>
+            </div>
+
+            <div>
+                <h3>Follow</h3>
+                <ul class="socmed">
+                    <a href="https://www.etsy.com/pl/people/xa6r7tj4jy2m451d" target="_blank"><img class="etsy" src="./images/frame.gif" alt="Et"></a>
+                    <a href="https://pl.pinterest.com/agellerart/" target="_blank"><img class="pint" src="./images/frame.gif" alt="Pt"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100086386541551" target="_blank"><img class="fb" src="./images/frame.gif" alt="Fb"></a>
+                    <a href="https://www.instagram.com/a.gellerart/" target="_blank"><img class="insta" src="./images/frame.gif" alt="Ins"></a>
+                    <a href="https://www.tiktok.com/@a.gellerart" target="_blank"><img class="tikt" src="./images/frame.gif" alt="TT"></a>
+                </ul>
+                <span></span>
+                <span></span>
+                <p>© AGeller LTD - all rights reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+</html>

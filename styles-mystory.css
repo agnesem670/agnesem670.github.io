@@ -1,0 +1,38 @@
+.grid-with-doors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    margin-inline: auto;
+    justify-items: left;
+    max-width: 1200px;
+}
+.grid-with-doors > button {
+    width: 250px;
+    height: 400px;
+    padding: 0;
+    border: none;
+    
+}
+
+#twinp { 
+    background: url("./images/doors1.gif"), no-repeat;
+    background-size: contain;
+    
+}
+#twinp:hover { 
+    background: url("./images/doors1h.gif"), no-repeat;
+    background-size: contain;
+}
+
+.close  {
+    display: none;
+}
+
+
+.open {
+    display: block;
+    width: 250px;
+    height: 400px;
+    padding: 0;
+    border: none;
+}
