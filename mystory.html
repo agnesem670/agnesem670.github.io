@@ -18,9 +18,27 @@
                     document.addEventListener("click", show);
                 }
             })
-        
+
             const show = (e) => {
-                document.getElementById(e.target.id).getElementsByTagName('img')[0].className = "open";
+                if (e.target.id === 'david') {
+                    document.getElementById(e.target.id).getElementsByTagName('img')[0].className = "open";
+                    document.getElementById("classic").getElementsByTagName('img')[0].className = "open";
+                } else if (e.target.id === 'wc'){
+                    document.getElementById(e.target.id).className = "close";
+                    document.getElementById("wccount").className = "container-green-red";
+                    var timeleft = 10;
+                    var downloadTimer = setInterval(function(){
+                        if(timeleft <= 0){
+                        document.getElementById("wccount").className = "close";   
+                        document.getElementById("wc").className = "open";
+                        document.getElementById("wc").getElementsByTagName('img')[0].className = "open";
+                        clearInterval(downloadTimer);
+                        }
+                        timeleft -= 1;
+                    }, 1000)    
+                } else {
+                    document.getElementById(e.target.id).getElementsByTagName('img')[0].className = "open";
+                }
             }
         </script>
     </head>
@@ -28,6 +46,7 @@
         <div class="container-head"></div>
             <div class="headimg"><img src="./images/headcol1500.gif"></div>
             <ul class="nav">
+                <il><a href="./index.html"><b>HOME</b></a></nav>
                 <il><a href="./events.html"><b>EVENTS</b></a></nav>
                 <il><a href="./artworks.html"><b>ARTWORKS</b></a></nav>
                 <il><a href="./mystory.html"><b>MY STORY</b></a></nav>
@@ -40,13 +59,18 @@
         <div class = "grid-with-doors"> 
             <div></div>
             <div></div>
-            <div><img src="./images/doors4.gif"></div>
-            <div><img src="./images/doors8.gif"></div>
-            <div><img src="./images/doors6.gif"></div>
-            <div><img src="./images/doors3.gif"></div>
-            <div><img src="./images/doors9.gif"></div>
-            <div><img src="./images/doors2.gif"></div>
-            <button id="david"><img class="close" src="./images/doors1open.gif"></button>
+            <button id="england"><img class ="close" src="./images/doors4open.gif"></button>
+            <button id="american"><img class="close" src="./images/doors8.gif"></button>
+            <button id="classic"><img class="close" src="./images/doors6open.gif"></button>
+            <button id="stone"><img class="close" src="./images/doors3.gif"></button>
+            <button id="broken"><img class="close" src="./images/doors9open.gif"></button>
+            <button id="wc"><img class="close" src="./images/doors2open2.gif"></button>
+            <div id="wccount" class="close"> <!-- container-green-red-->
+                <img class="open" src="./images/doors2open.gif">
+                <button class="btn" id="red">Cut red</button>
+                <button class="btn" id="green">Cut green</button>
+            </div>
+            <button id="david"><img class="close" src="./images/doors5open.gif"></button>
             <button id="twinp"><img class="close" src="./images/doors1open.gif"></button>
         </div>
 

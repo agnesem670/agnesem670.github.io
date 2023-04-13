@@ -11,23 +11,11 @@
     height: 400px;
     padding: 0;
     border: none;
-    
-}
-
-#twinp { 
-    background: url("./images/doors1.gif"), no-repeat;
-    background-size: contain;
-    
-}
-#twinp:hover { 
-    background: url("./images/doors1h.gif"), no-repeat;
-    background-size: contain;
 }
 
 .close  {
     display: none;
 }
-
 
 .open {
     display: block;
@@ -36,3 +24,118 @@
     padding: 0;
     border: none;
 }
+
+.container-green-red {
+    display: block;
+    position: relative;
+    width:100%;
+    max-width:250px;
+}
+
+.cointainer-green-red img {
+    width: 250px;
+    height: 400px;
+}
+
+.btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 16px;
+    width: 120px;
+    color:black;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    font-weight: bold;
+}
+#green {
+    top: 20%;
+    background-color: rgb(6, 105, 6);
+}
+
+#red {
+    top: 30%;
+    background-color: rgb(205, 8, 8);
+}
+
+#england { 
+    background: url("./images/doors4.gif"), no-repeat;
+    background-size: contain;
+}
+#england:hover { 
+    background: url("./images/doors4h.gif"), no-repeat;
+    background-size: contain;
+}
+
+#american { 
+    background: url("./images/doors8.gif"), no-repeat;
+    background-size: contain;
+}
+#american:hover { 
+    background: url("./images/doors8h.gif"), no-repeat;
+    background-size: contain;
+}
+
+#classic { 
+    background: url("./images/doors6.gif"), no-repeat;
+    background-size: contain;
+}
+#classic:hover { 
+    background: url("./images/doors6h.gif"), no-repeat;
+    background-size: contain;
+}
+
+#stone { 
+    background: url("./images/doors3.gif"), no-repeat;
+    background-size: contain;
+}
+#stone:hover { 
+    background: url("./images/doors3h.gif"), no-repeat;
+    background-size: contain;
+}
+
+#broken { 
+    background: url("./images/doors9.gif"), no-repeat;
+    background-size: contain;
+}
+#broken:hover { 
+    background: url("./images/doors9h.gif"), no-repeat;
+    background-size: contain;
+}
+
+#wc { 
+    background: url("./images/doors2.gif"), no-repeat;
+    background-size: contain;
+    width: 250px;
+}
+#wc:hover { 
+    background: url("./images/doors2h.gif"), no-repeat;
+    background-size: contain;
+}
+
+#david { 
+    background: url("./images/doors5.gif"), no-repeat;
+    background-size: contain;
+}
+#david:hover { 
+    background: url("./images/doors5h.gif"), no-repeat;
+    background-size: contain;
+}
+
+#twinp { 
+    background: url("./images/doors1.gif"), no-repeat;
+    background-size: contain;
+}
+#twinp:hover { 
+    background: url("./images/doors1h.gif"), no-repeat;
+    background-size: contain;
+}
+
