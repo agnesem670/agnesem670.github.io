@@ -13,11 +13,12 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                const buttons = document.getElementsByTagName("button"); 
-                for (let button of buttons) {
+                const buttons = document.querySelectorAll("button:not([class=btn])");
+                for (let button in buttons) {
                     document.addEventListener("click", show);
-                }
+                    }
             })
+            
 
             const show = (e) => {
                 if (e.target.id === 'david') {
@@ -26,7 +27,12 @@
                 } else if (e.target.id === 'wc'){
                     document.getElementById(e.target.id).className = "close";
                     document.getElementById("wccount").className = "container-green-red";
-                    var timeleft = 10;
+                    const buttonswithclass = document.querySelectorAll(".btn");
+                    for (let button in buttonswithclass) {
+                        document.addEventListener("click", boom);
+                    }
+                    
+                    var timeleft = 10; 
                     var downloadTimer = setInterval(function(){
                         if(timeleft <= 0){
                         document.getElementById("wccount").className = "close";   
@@ -40,6 +46,13 @@
                     document.getElementById(e.target.id).getElementsByTagName('img')[0].className = "open";
                 }
             }
+
+            function boom () {
+                document.getElementById("wccount").className = "close";   
+                document.getElementById("wc").className = "open";
+                document.getElementById("wc").getElementsByTagName('img')[0].className = "open";
+            }
+
         </script>
     </head>
     <header>
@@ -64,7 +77,10 @@
             <button id="classic"><img class="close" src="./images/doors6open.gif"></button>
             <button id="stone"><img class="close" src="./images/doors3.gif"></button>
             <button id="broken"><img class="close" src="./images/doors9open.gif"></button>
-            <button id="wc"><img class="close" src="./images/doors2open2.gif"></button>
+            <button id="wc" class="open"><img class="close" src="./images/doors2open2.gif"></button>
+            <!-- button #wc is displayed but only with background and hover. "Click" starts function show: #wc is disabled, 
+            #wccount is enabled, timer starts (10s), buttons #green and #red appears. After 10s or click on buttons #green or #red:
+            #wccount is disabled, #wc and #wc.img is enabled.-->
             <div id="wccount" class="close"> <!-- container-green-red-->
                 <img class="open" src="./images/doors2open.gif">
                 <button class="btn" id="red">Cut red</button>
