@@ -10,54 +10,11 @@
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="styles-mystory.css">
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const buttons = document.querySelectorAll("button:not([class=btn])");
-                for (let button in buttons) {
-                    document.addEventListener("click", show);
-                    }
-            })
-            
-
-            const show = (e) => {
-                if (e.target.id === 'david') {
-                    document.getElementById(e.target.id).getElementsByTagName('img')[0].className = "open";
-                    document.getElementById("classic").getElementsByTagName('img')[0].className = "open";
-                } else if (e.target.id === 'wc'){
-                    document.getElementById(e.target.id).className = "close";
-                    document.getElementById("wccount").className = "container-green-red";
-                    const buttonswithclass = document.querySelectorAll(".btn");
-                    for (let button in buttonswithclass) {
-                        document.addEventListener("click", boom);
-                    }
-                    
-                    var timeleft = 10; 
-                    var downloadTimer = setInterval(function(){
-                        if(timeleft <= 0){
-                        document.getElementById("wccount").className = "close";   
-                        document.getElementById("wc").className = "open";
-                        document.getElementById("wc").getElementsByTagName('img')[0].className = "open";
-                        clearInterval(downloadTimer);
-                        }
-                        timeleft -= 1;
-                    }, 1000)    
-                } else {
-                    document.getElementById(e.target.id).getElementsByTagName('img')[0].className = "open";
-                }
-            }
-
-            function boom () {
-                document.getElementById("wccount").className = "close";   
-                document.getElementById("wc").className = "open";
-                document.getElementById("wc").getElementsByTagName('img')[0].className = "open";
-            }
-
-        </script>
+        <script type="text/javascript" src="scripts.js"></script>
     </head>
     <header>
         <div class="container-head"></div>
-            <div class="headimg"><img src="./images/headcol1500.gif"></div>
+            <img class="headimg" src="./images/headcol2.gif">
             <ul class="nav">
                 <il><a href="./index.html"><b>HOME</b></a></nav>
                 <il><a href="./events.html"><b>EVENTS</b></a></nav>
@@ -68,10 +25,29 @@
             </ul>          
     </header>
 
+    <span></span>
+
     <body>
+    <!-- ABOUT ME -->
+        <div class = "container-me-michal">
+            <div class="portrait"><img src="./images/michal.gif"></div>
+            <div class="portrait"><img src="./images/me.gif"></div>
+            <div class="cloud">
+                <img src="./images/cloud.gif">
+                <p class="text-field">Text about me</p>
+                
+            </div>
+        </div>
+
+        <span></span>
+
+    <!-- LOOKING FOR MICHAL -->
         <div class = "grid-with-doors"> 
-            <div></div>
-            <div></div>
+            <div id="cloud-with-text1" >
+                <img class="small-cloud" src="./images/cloud-small.gif">
+                <img class="me-small" src="./images/me-col.gif">
+                <p class="text-field-small">Text about doors</p>
+            </div>
             <button id="england"><img class ="close" src="./images/doors4open.gif"></button>
             <button id="american"><img class="close" src="./images/doors8.gif"></button>
             <button id="classic"><img class="close" src="./images/doors6open.gif"></button>
@@ -88,11 +64,16 @@
             </div>
             <button id="david"><img class="close" src="./images/doors5open.gif"></button>
             <button id="twinp"><img class="close" src="./images/doors1open.gif"></button>
+            <div id="cloud-with-text2" >
+                <img class="small-cloud" src="./images/cloud.gif">
+            </div>
         </div>
 
     </body>
 
-        <footer>
+    <span></span>
+
+    <footer>
         <div class="container-foot">
 
             <div>

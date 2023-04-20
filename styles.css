@@ -3,6 +3,7 @@
 
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(203, 201, 199)
 } 
 
 a {
@@ -15,14 +16,17 @@ a {
 
 .container-head {
   position: relative;
+  width: 100%;
+  max-width: 1500px;
 }
 
 .headimg {
   display: flex;
   justify-content: center;
-  margin: 0;
+  width: 1500px;
+  height: auto;
+  margin: auto;
   padding: 0;
-  grid-row: span 2;
 }
 
 .nav {
@@ -63,6 +67,9 @@ span {
 .heroimg {
   display: flex;
   justify-content: center;
+  width: 1500px;
+  height: auto;
+  margin:auto
 }
 
 .grid-with-story {
