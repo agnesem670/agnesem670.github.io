@@ -56,12 +56,27 @@ span {
   padding: 10px;
 }
 
-.enjoy {
+.cont-h1 {
+  display: grid;
+  position: relative;
+  margin-inline: auto;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-width: 1500px;
+}
+
+.cont-h1 > h1 {
+  position: absolute;
   text-transform: uppercase;
-  font-size: larger;
   font-weight:bold;
-  text-align: center;
   color: rgb(86, 1, 86);
+}
+
+.cont-h1 > img {
+  width: 1500px;
+  height: auto;
 }
 
 .heroimg {
