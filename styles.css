@@ -99,7 +99,7 @@ span {
     margin-inline: auto;
     justify-items: center;
     max-width: 1500px;
-    background: none;
+    background-image: url(./images/backimg2.gif);
 }
 
 .portrait {
