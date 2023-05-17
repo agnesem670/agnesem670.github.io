@@ -2,8 +2,8 @@
 /* grid in header - layout */
 
 html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: white
+  font-family: Garamond, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
 } 
 
 a {
@@ -40,15 +40,20 @@ a {
 
 .nav li{
   display:inline;
+  
 }
 .nav a{
   display:inline-block;
+  font-size: x-large;
+  font-weight: bolder;
   margin-left: 10px;
   margin-right: 10px;
+  transition: all 0.3s;
 }
 
 .nav a:hover {
   color: rgb(86, 1, 86);
+  transform: translateY(-5px);
 }
 
 /* --- BODY --- */
@@ -69,7 +74,6 @@ span {
 
 .cont-h1 > h1 {
   position: absolute;
-  text-transform: uppercase;
   font-weight:bold;
   color: rgb(86, 1, 86);
 }
@@ -87,6 +91,66 @@ span {
   margin:auto
 }
 
+/* --- CLOUD WITH PORTRAIY AND TEXT --- */
+.container-me {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: auto;
+    margin-inline: auto;
+    justify-items: center;
+    max-width: 1500px;
+    background: none;
+}
+
+.portrait {
+    margin: 20px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.portrait > img {
+    width: 300px;
+    height: auto;
+}
+
+.cloud {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    width: auto;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.cloud > img {
+    width: 900px;
+    height: 400px;
+}
+
+.text-field {
+    position: absolute;
+    top: 12%;
+    left: 22%;
+    transform: (-50%, -50%);
+    width: 580px;
+    height: 320px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.cloud > p {
+  font-size: xx-large;
+  font-style: italic;
+}
+
+.ins-link {
+  font-weight: bold;
+  color: rgb(86, 1, 86);
+}
+
+/* --- GRID WITH PICTURES --- */
+
 .grid-with-story {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -97,6 +161,11 @@ span {
   justify-items: center;
 }
 
+.grid-with-story >div >img {
+  width: 354px;
+  height: 500px;
+  object-fit: cover;
+}
 
 .grid-with-story:hover {
   background:url(./images/bodycol.gif), no-repeat;
