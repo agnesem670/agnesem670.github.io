@@ -161,10 +161,16 @@ span {
   justify-items: center;
 }
 
+.grid-with-story >div {
+  width: 354px;
+  height: 500px;
+  overflow: hidden;
+}
+
 .grid-with-story >div >img {
   width: 354px;
   height: 500px;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 .grid-with-story:hover {
