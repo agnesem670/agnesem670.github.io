@@ -1,0 +1,59 @@
+.cont-art1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    row-gap: 10px;
+    margin-inline: auto;
+    justify-items: center;
+    background: white;
+    max-width: 1500px;
+}
+
+.cont-art1 > div {
+    background: white;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-big-ver {
+    max-height: 810px;
+    max-width: 598px;
+}
+
+.img-ver {
+    max-height: 400px;
+    max-width: 294px;
+}
+
+.img-hor {
+    max-height: 400px;
+    max-width: 598px;
+}
+
+
+.txt-ver {
+    position: absolute;
+    transform: (-50%, -50%);
+    margin: 10%;
+    max-height: 380px;
+    max-width: 285px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.artw:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.artw:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
