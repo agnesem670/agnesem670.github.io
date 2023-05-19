@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let button in buttons) {
         document.addEventListener("click", show);
     }
-
-    /* IMAGES PROTECTION*/
     let allImages = document.querySelectorAll("img");
         allImages.forEach((value)=>{
         value.oncontextmenu = (e)=>{

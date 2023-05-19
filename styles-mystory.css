@@ -215,7 +215,7 @@
     height: 400px;
 }
 
-#text-field-small {
+.text-field-small {
     position: absolute;
     top: 10%;
     left: 25%;
@@ -226,15 +226,5 @@
     margin: 0px;
 }
 
-#text-field-small2 {
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: (-50%, -50%);
-    width: 400px;
-    height: 330px;
-    padding: 0px;
-    margin: 0px;
-}
 
 

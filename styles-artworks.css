@@ -1,4 +1,21 @@
-.cont-art1 {
+
+.cont-img{
+    position: relative;
+}
+
+.overlay-img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.underlay-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.cont-art {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
@@ -9,11 +26,12 @@
     max-width: 1500px;
 }
 
-.cont-art1 > div {
+.cont-art  > div {
     background: white;
     width: auto;
     height: auto;
     overflow: hidden;
+    box-shadow: 3px 3px 1px lightgray;
 }
 
 .img-big-ver {
@@ -31,6 +49,11 @@
     max-width: 598px;
 }
 
+.img-hor-long {
+    max-height: 400px;
+    max-width: 902px;
+}
+
 
 .txt-ver {
     position: absolute;
@@ -42,18 +65,27 @@
     margin: 0px;
 }
 
-
-
-.artw:first-child {
+.artw1:first-child {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.artw:nth-child(5) {
+.artw1:nth-child(5) {
     grid-column-start: 3;
     grid-column-end: 5;
 }
 
+.artw1:nth-child(7) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.artw2:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 
