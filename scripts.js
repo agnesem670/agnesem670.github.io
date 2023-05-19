@@ -1,8 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
+    /* ONCLICK "SHOW" */
     const buttons = document.querySelectorAll("button:not([class=btn])");
     for (let button in buttons) {
         document.addEventListener("click", show);
-        }
+    }
+
+    /* IMAGES PROTECTION*/
+    let allImages = document.querySelectorAll("img");
+        allImages.forEach((value)=>{
+        value.oncontextmenu = (e)=>{
+        e.preventDefault();
+    }
+})
 })
 
 /* TEXTS FOR DOORS PURPOSE*/
@@ -25,6 +34,7 @@ function clicked() {
     clicks++;
 }
 
+/* LOOKING FOR MICHAL */
 const show = (e) => {
     
     if (e.target.id === 'david') {
