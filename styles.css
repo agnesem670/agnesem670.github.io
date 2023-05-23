@@ -22,6 +22,17 @@ html {
   font-style: italic;
 }
 
+.txt-xl {
+  font-size: x-large;
+}
+
+.courier {
+  font-family: 'Courier New', Courier, monospace;
+}
+.red {
+  color: red;
+}
+
 /* TODO layouts for different screen widths */ 
 
 .container-head {
@@ -127,15 +138,13 @@ span {
   position: relative;
   width: 100%;
   max-width: 900px;
-  width: auto;
   margin: 20px;
   margin-top: 50px;
 }
 
 .cloud > img {
   width: 900px;
-  height: 400px;
-}
+  height: auto}
 
 .text-field {
   position: absolute;

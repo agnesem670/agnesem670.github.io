@@ -18,7 +18,7 @@ let idText = {
     wc1 : "Oh no, not there! We are not that close...",
     wc2 : "Thanks God Michal is not here!",
     wc3 : "Uff...",
-    england : "",
+    england : "RUN!",
     american : "",
     classic : "This is David. David is weird. Let's get out of here...",
     stone : "",

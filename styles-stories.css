@@ -17,7 +17,6 @@
 
 .cont-art {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     row-gap: 10px;
     margin-inline: auto;
@@ -31,7 +30,6 @@
     width: auto;
     height: auto;
     overflow: hidden;
-    box-shadow: 3px 3px 1px lightgray;
 }
 
 .img-big-ver {
@@ -54,38 +52,24 @@
     max-width: 902px;
 }
 
-
 .txt-ver {
     position: absolute;
-    transform: (-50%, -50%);
-    margin: 10%;
-    max-height: 380px;
-    max-width: 285px;
+    top: 10px;
+    left: 10px;
     padding: 0px;
-    margin: 0px;
+}
+.grid-area-1 {
+    grid-template-areas: 'big big txt1 hor1 hor1'
+                        'big big ver1 txt2 txt3'
+                        'hor2 hor2 long long long';
 }
 
-.artw1:first-child {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.artw1:nth-child(5) {
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-
-.artw1:nth-child(7) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.artw2:nth-child(2) {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
+.big1 {grid-area: big;}
+.ver1-1 {grid-area: ver1;}
+.hor1-1 {grid-area:hor1;}
+.hor1-2 {grid-area:hor2;}
+.long1 {grid-area:long;}
+.txt1-1 {grid-area:txt1;}
+.txt1-2 {grid-area:txt2;}
+.txt1-3 {grid-area:txt3;}
 
