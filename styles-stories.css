@@ -56,20 +56,49 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    padding: 0px;
+    padding: 0px;    
 }
 .grid-area-1 {
-    grid-template-areas: 'big big txt1 hor1 hor1'
-                        'big big ver1 txt2 txt3'
-                        'hor2 hor2 long long long';
+    grid-template-areas:'big big txt1 hor1 hor1'
+                        'big big ver1 txt2 txt2'
+                        'ver2 txt3 long long long';
 }
 
-.big1 {grid-area: big;}
-.ver1-1 {grid-area: ver1;}
-.hor1-1 {grid-area:hor1;}
-.hor1-2 {grid-area:hor2;}
-.long1 {grid-area:long;}
-.txt1-1 {grid-area:txt1;}
-.txt1-2 {grid-area:txt2;}
-.txt1-3 {grid-area:txt3;}
+#big1 {grid-area: big;}
+#ver1-1 {grid-area: ver1;}
+#hor1-1 {grid-area:hor1;}
+#ver1-2 {grid-area:ver2;}
+#long1 {grid-area:long;}
+#txt1-1 {grid-area:txt1;}
+#txt1-2 {grid-area:txt2;}
+#txt1-3 {grid-area:txt3;}
 
+.grid-area-2 {
+    grid-template-areas:'critic ver3 big big txt2'
+                        'ver1 txt1 big big ver2'
+                        'long long long txt3 txt3';
+}
+
+#big2 {grid-area: big;}
+#ver2-1 {grid-area: ver1;}
+#ver2-2 {grid-area: ver2;}
+#ver2-3 {grid-area: ver3;}
+#long2 {grid-area:long;}
+#txt2-1 {grid-area:txt1;}
+#txt2-2 {grid-area:txt2;}
+#txt2-3 {grid-area:txt3;}
+
+.grid-area-3 {
+    grid-template-areas:'ver1 txt2 long long long'
+                        'hor1 hor1 txt3 big big'
+                        'txt1 hor2 hor2 big big';
+}
+
+#big3 {grid-area: big;}
+#ver3-1 {grid-area: ver1;}
+#hor3-1 {grid-area: hor1;}
+#hor3-2 {grid-area: hor2;}
+#long3 {grid-area:long;}
+#txt3-1 {grid-area:txt1;}
+#txt3-2 {grid-area:txt2;}
+#txt3-3 {grid-area:txt3;}

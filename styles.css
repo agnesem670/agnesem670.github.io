@@ -7,7 +7,14 @@ html {
 } 
 
 /* FONTS */
+.courier {
+  font-family: 'Courier New', Courier, monospace;
+}
 
+.marker {
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Sedgwick Ave', cursive;
+}
 .no-dec-blc {
   text-decoration: none;
   color:black;
@@ -15,6 +22,10 @@ html {
 
 .relativ {
     position: relative;
+}
+
+.txt-center {
+  text-align: center;
 }
 
 .txt-xxl-ital {
@@ -26,11 +37,16 @@ html {
   font-size: x-large;
 }
 
-.courier {
-  font-family: 'Courier New', Courier, monospace;
+.txt-xxxl {
+  font-size: 50px;
 }
+
 .red {
   color: red;
+}
+
+.purple {
+  color: rgb(86, 1, 86);
 }
 
 /* TODO layouts for different screen widths */ 
@@ -64,7 +80,7 @@ html {
   
 }
 .nav a{
-  display:inline-block;
+  display: inline-block;
   font-size: x-large;
   font-weight: bolder;
   margin-left: 10px;
@@ -215,8 +231,6 @@ span {
 .body3:hover {
   background:url(./images/bodytxt3h.gif), no-repeat;
 }
-
-
 
 /* --- FOOTER --- */
 .container-foot {
