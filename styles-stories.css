@@ -102,3 +102,48 @@
 #txt3-1 {grid-area:txt1;}
 #txt3-2 {grid-area:txt2;}
 #txt3-3 {grid-area:txt3;}
+
+.grid-area-4 {
+    grid-template-areas:'ver1 big big txt1 ver2'
+                        'txt2 big big hor1 hor1'
+                        'txt3 txt3 long long long';
+}
+
+#big4 {grid-area: big;}
+#ver4-1 {grid-area: ver1;}
+#ver4-2 {grid-area: ver2;}
+#hor4-1 {grid-area: hor1;}
+#long4 {grid-area:long;}
+#txt4-1 {grid-area:txt1;}
+#txt4-2 {grid-area:txt2;}
+#txt4-3 {grid-area:txt3;}
+
+.grid-area-5 {
+    grid-template-areas:'ver1 txt1 txt2 big big'
+                        'long long long big big'
+                        'hor1 hor1 txt3 txt3 ver2';
+}
+
+#big5 {grid-area: big;}
+#ver5-1 {grid-area: ver1;}
+#ver5-2 {grid-area: ver2;}
+#hor5-1 {grid-area: hor1;}
+#long5 {grid-area:long;}
+#txt5-1 {grid-area:txt1;}
+#txt5-2 {grid-area:txt2;}
+#txt5-3 {grid-area:txt3;}
+
+.grid-area-6 {
+    grid-template-areas:'big big hor1 hor1 txt1'
+                        'big big ver1 txt2 txt2'
+                        'ver2 txt3 long long long';
+}
+
+#big6 {grid-area: big;}
+#ver6-1 {grid-area:ver1;}
+#ver6-2 {grid-area:ver2;}
+#hor6-1 {grid-area:hor1;}
+#long6 {grid-area:long;}
+#txt6-1 {grid-area:txt1;}
+#txt6-2 {grid-area:txt2;}
+#txt6-3 {grid-area:txt3;}
