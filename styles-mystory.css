@@ -65,10 +65,6 @@
     cursor: pointer;
 }
 
-.close  {
-    display: none;
-}
-
 .open {
     display: block;
     width: 250px;

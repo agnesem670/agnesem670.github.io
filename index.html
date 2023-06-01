@@ -2,7 +2,7 @@
 <!-- TODO two layouts for two screen widths: up to 700, 700 and more -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
     <head>
         <title>A. Geller Art</title>
         <meta charset="UTF-8">
@@ -15,7 +15,7 @@
         <script type="text/javascript" src="scripts.js"></script>
     </head>
     <header>
-        <div class="container-head"></div>
+        <div class="container-head">
             <img class="headimg" src="./images/headcol2.gif">
             <ul class="nav">
                 <il><a class="no-dec-blc" href="./index.html">HOME</a></nav>
@@ -24,20 +24,21 @@
                 <il><a class="no-dec-blc" href="./stories.html">STORIES</a></nav>
                 <il><a class="no-dec-blc" href="./mystory.html">MY STORY</a></nav>
                 <il><a class="no-dec-blc" href="./contact.html">CONTACT</a></nav>
-            </ul>          
+            </ul>     
+        </div>      
     </header>
 
-    <body>
+    <body id="elev-stop" class="elev-appears" onscroll="elevAppear()">
 
         <img class="heroimg" src="./images/landcol2.gif">
 
         <span></span>
 
         <div class = "container-me backg1">
-            <div class="portrait"><img src="./images/me.gif"></div>
+            <div class="portrait"><img src="./images/me3.gif"></div>
             <div class="cloud">
                 <img src="./images/cloud-big.gif">
-                <p class="text-field txt-xxl-ital">Hello! I am Agnieszka. I am glad to see You here! <br>
+                <p class="text-field txt-xxl-ital">Hello! I am glad to see You here! <br>
                     <br>
                     I designed this website so you can have a good time among my drwaings and ideas.
                     I have prepared a few surprises for you. I encourage you to stay longer. <br>
@@ -49,10 +50,10 @@
             </div>
         </div>
 
-        <span></span>
+        <span class="span40"></span>
 
         <div class="cont-h1">
-            <img src="./images/backimg.gif">
+            <img src="./images/backimg1a.gif">
             <h1>Stories captured in the drawings</h1>
         </div>
 
@@ -85,8 +86,16 @@
 
         <span></span>
 
+        <div id="elevAppear" class="container-me backg1" >
+            <div class="portrait"><img src="./images/me2.gif"></div>
+            <div class="cloud">
+                <img src="./images/cloud-big.gif">
+                <p class="text-field txt-xxl-ital">
+                    We went so far. I prepared an elevator to make your life easier. Click on and jump up!</p>
+            </div>
+        </div>
+        <button id="elevator" class="close" onclick="elevGoesDown()"><img class="elev-img" src="./images/elevator.gif"></button>
     </body>
-
     <footer>
         <div class="container-foot">
 
@@ -119,3 +128,9 @@
 
         </div>
     </footer>
+
+    <!-- OOPS -->
+
+    <div id="oops" class="close">
+        <img id="oops-img" src="./images/oops.gif">
+    </div>
