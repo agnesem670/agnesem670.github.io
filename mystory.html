@@ -54,22 +54,24 @@
                 <img class="small-cloud" src="./images/cloud.gif">
                 <p id="text-field-small" class="text-field-small txt-xxl-ital">Michal is missing. Please help me find him.</p>
             </div>
-            <button class="doors" id="england"><img class ="close" src="./images/doors4open.gif"></button>
-            <button class="doors" id="american"><img class="close" src="./images/doors8.gif"></button>
-            <button class="doors" id="classic"><img class="close" src="./images/doors6open.gif"></button>
-            <button class="doors" id="stone"><img class="close" src="./images/doors3.gif"></button>
-            <button class="doors" id="broken"><img class="close" src="./images/doors9open.gif"></button>
-            <button class="doors" id="wc" class="open"><img class="close" src="./images/doors2open2.gif"></button>
-            <!-- button #wc is displayed but only with background and hover. "Click" starts function show: #wc is disabled, 
-            #wccount is enabled, timer starts (10s), buttons #green and #red appears. After 10s or click on buttons #green or #red:
-            #wccount is disabled, #wc and #wc.img is enabled.-->
-            <div id="wccount" class="close"> <!-- container-green-red-->
+            <button onclick="onclick=showTarget(event)" id="england"><img class ="close" src="./images/doors4open.gif"></button>
+            <button onclick="onclick=showTarget(event)" id="american"><img class="close" src="./images/doors8.gif"></button>
+            <button onclick="onclick=showTarget(event)" id="classic"><img class="close" src="./images/doors6open.gif"></button>
+            <button onclick="onclick=showTarget(event)" id="stone"><img class="close" src="./images/doors3.gif"></button>
+            <button onclick="onclick=showTarget(event)" id="broken"><img class="close" src="./images/doors9open.gif"></button>
+            <!--wc-->
+            <button onclick="showWc()" id="wc" class="open"><img class="close" src="./images/doors2.gif"></button>
+            <div id="wc2" class="close"> <!--.container-green-red-->
                 <img class="open" src="./images/doors2open.gif">
-                <button class="btn" id="red">Cut red</button>
+                <button class="btn" id="red">Cut red</button> 
                 <button class="btn" id="green">Cut green</button>
             </div>
-            <button class="doors" id="david"><img class="close" src="./images/doors5open.gif"></button>
-            <button class="doors" id="twinp"><img class="close" src="./images/doors1open.gif"></button>
+            <div id="wc3" class="close">
+                <img src="./images/doors2open2.gif">
+            </div>
+            <!--wc end-->
+            <button onclick="showDavid()" id="david"><img class="close" src="./images/doors5open.gif"></button>
+            <button onclick="showTarget(event)" id="twinp"><img class="close" src="./images/doors1open.gif"></button>
             <div id="cloud-with-text2" >
                 <img class="small-cloud" src="./images/cloud.gif">
                 <p id="text-field-small2" class="text-field-small txt-xxl-ital">Please, please, please help me! We have to find him!</p>

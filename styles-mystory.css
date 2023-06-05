@@ -76,13 +76,25 @@
 .container-green-red {
     display: block;
     position: relative;
-    width:100%;
-    max-width:250px;
+    width: 100%;
+    max-width :250px;
 }
 
 .cointainer-green-red img {
     width: 250px;
     height: 400px;
+}
+
+.container-boom {
+    display: block;
+    width: 100%;
+    max-width :250px;
+    height: auto;
+}
+
+.container-boom >img {
+    max-width: 250px;
+    max-height: 400px;
 }
 
 .btn {
