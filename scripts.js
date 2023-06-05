@@ -28,8 +28,8 @@ function elevGoesDown (){
             top: 0, 
             behavior: 'smooth',
         });
-        oops.className="close";
-        clearInterval(elevInterval);  
+        clearInterval(elevInterval);
+        oops.className="close";  
     }, 2000);
     return;   
 }
@@ -66,6 +66,8 @@ const idText = {
 let clicks = 0;       
 
 function showWc () {
+    clearInterval(timerDavid);
+    
     const wc = document.getElementById("wc");
     const wc2 = document.getElementById("wc2");
     const wc3 = document.getElementById("wc3");
@@ -120,8 +122,9 @@ function showWc () {
 }
 
 /* DAVID */
+let timerDavid = ""
 function showDavid () {
-    setInterval (function () {
+    timerDavid = setInterval (function () {
         let now = new Date();
         let hr = now.getHours();
         let sec = now.getSeconds()>=10?now.getSeconds():('0'+now.getSeconds());
@@ -132,13 +135,15 @@ function showDavid () {
     }, 10);
     document.getElementById("david").getElementsByTagName('img')[0].className = "open";
     document.getElementById("classic").getElementsByTagName('img')[0].className = "open";
-    return 0;
+    return ;
 }
 
 /* RANDOM DOOR */
 function showTarget(event) {
+    clearInterval(timerDavid);
     const idName = event.target.id;
     document.getElementById(idName).getElementsByTagName('img')[0].className = "open";
     document.getElementById("text-field-small").innerHTML= idText[idName];
     document.getElementById("text-field-small2").innerHTML= idText[idName];
+    return ;
 }

@@ -1,52 +1,3 @@
-/*  --- ME AND MICHAL --- */
-.container-me-michal {
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
-    gap: auto;
-    margin-inline: auto;
-    justify-items: center;
-    max-width: 1500px;
-    background: url(./images/backg-match.gif);
-}
-
-.portrait {
-    margin: 20px;
-    margin-top: 50px;
-    width: 100%;
-    max-width: 250px;
-}
-
-.portrait > img {
-    width: 250px;
-    height: auto;
-}
-
-.cloud {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    width: auto;
-    margin: 20px;
-    margin-top: 50px;
-}
-
-.cloud > img {
-    width: 800px;
-    height: 400px;
-}
-
-.text-field {
-    position: absolute;
-    top: 12%;
-    left: 22%;
-    transform: (-50%, -50%);
-    width: 580px;
-    height: 320px;
-    padding: 0px;
-    margin: 0px;
-}
-
-
 /*  --- LOOKING FOR MICHAL --- */
 
 .grid-with-doors {
@@ -139,10 +90,10 @@
     background: url("./images/doors8.gif"), no-repeat;
     background-size: contain;
 }
-#american:hover { 
+/*#american:hover { 
     background: url("./images/doors8h.gif"), no-repeat;
     background-size: contain;
-}
+}*/
 
 #classic { 
     background: url("./images/doors6.gif"), no-repeat;
@@ -157,19 +108,19 @@
     background: url("./images/doors3.gif"), no-repeat;
     background-size: contain;
 }
-#stone:hover { 
+/*#stone:hover { 
     background: url("./images/doors3h.gif"), no-repeat;
     background-size: contain;
-}
+}*/
 
 #broken { 
     background: url("./images/doors9.gif"), no-repeat;
     background-size: contain;
 }
-#broken:hover { 
+/*#broken:hover { 
     background: url("./images/doors9h.gif"), no-repeat;
     background-size: contain;
-}
+}*/
 
 #wc { 
     background: url("./images/doors2.gif"), no-repeat;
